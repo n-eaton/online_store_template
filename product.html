@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Preet-Sport :: Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/static/images/favicon_bootstrap.ico">
+    <link rel="stylesheet" href="static/carusel/owl.carousel.min.css">
+    <link rel="stylesheet" href="static//carusel/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Heather -->
+        <!--header-top-->
+        <header class="header">
+            <div class="header-top py-1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4 col-6 ps-4">
+                            <div class="header-top-phone d-flex align-items-center h-100 ">
+                                <!-- primenyaem d-flex chtobi tel bil v centre -->
+                                <!-- phone link -->
+                                <i class="fa-solid fa-mobile-screen "></i>
+                                <a class="ms-2" href="tel:+1 (123) 456 7890">+1 (123) 456 7890</a>
+                            </div>
+                        </div>
+                        <!--  d-none d-sm-block primenyaetsya chtobi skrit' blok dlya ustroistv men'she sm  a dlya dvuh drugih blokov dobavlyaem sm-6 chobi oni virovnolis' pri umen'shenii ekrana-->
+                        <div class="col-sm-4 d-none d-sm-block ">
+                            <!-- social icons -->
+                            <!--  -->
+                            <ul class="sosial-icons d-flex justify-content-center">
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-6">
+                            <!-- buttons for account and language -->
+                            <div class="header-top account d-flex justify-content-end">
+                                <div class="btn-group me-2">
+                                    <div class="dropdown">
+                                        <button class="btn btn-sm dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Account
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="login.html">Sign In</a></li>
+                                            <li><a class="dropdown-item" href="registration.html">Sign Up</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <div class="dropdown">
+                                        <button class="btn btn-sm dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            EN
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">RU</a></li>
+                                            <li><a class="dropdown-item" href="#">CN</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./header-top account   ./d-flex justify-content-end  end buttons for account and language -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--./header-top-->
+            <!--./header-top-->
+            <!-- header middle -->
+            <div class="header-middle bg-white py-4">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- logo -->
+                        <div class="col-sm-6 col-lg-4 ps-4">
+                            <a href="home.html" class="header-logo h1">Preet Sport</a>
+                        </div>
+
+                        <!-- buttons -->
+                        <!-- <div class="col-lg-4  order-md-2 cart-buttons text-end d-none d-lg-block">
+                            <a href="#" class="btn p-1">
+                                <i class="fa-solid fa-heart"></i>
+                                <span class="badge text-bg-warning cart-badge bg-warning rounded-circle">3</span>
+                            </a>
+                            <button class="btn p-1 " type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="badge text-bg-warning cart-badge bg-warning  rounded-circle">5</span>
+                            </button>
+                        </div> -->
+
+
+                        <!-- search items form -->
+                        <div class="col-sm-6  mt-2 mt-md-0">
+                            <form action="">
+                                <div class="input-group">
+                                    <input type="text" name="search" class="form-control" placeholder="Searching..."
+                                        aria-label="Searching..." aria-describedby="button-search">
+                                    <button class="btn btn-outline-warning" type="submmit" id="button-search"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </form>
+                        </div><!-- search items form -->
+                    </div>
+                </div>
+            </div>
+            <!--./header-middle-->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <div class="table-responsive">
+                        <table class="table offcanvasCart-table">
+                            <tbody>
+                                <tr>
+                                    <td class="product-img-td"><a href="#"><img
+                                                src="static/images/images_shoes/shoes01.jpg" alt=""></a></td>
+                                    <td class=""><a href="#">Product 1 </a></td>
+                                    <td class=""><a href="#">$ 50</a></td>
+                                    <td ><input type="number" value="100" class="form-control cart-qty" name="quantity"></td>
+                                    <td class=""><button class="btn btn-danger"><i
+                                                class="fa-regular fa-circle-xmark"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="product-img-td"><a href="#"><img
+                                                src="static/images/images_shoes/shoes02.jpg" alt=""></a></td>
+                                    <td class=""><a href="#">Product 2</a></td>
+                                    <td class=""><a href="#">$ 100</a></td>
+                                    <td ><input type="number" value="100" class="form-control cart-qty" name="quantity"></td>
+                                    <td class=""><button class="btn btn-danger"><i
+                                                class="fa-regular fa-circle-xmark"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="product-img-td"><a href="#"><img
+                                                src="static/images/images_shoes/shoes03.jpg" alt=""></a></td>
+                                    <td class=""><a href="#">Product 3 </a></td>
+                                    <td class=""><a href="#">$ 100.00</a></td>
+                                    <td ><input type="number" value="100" class="form-control cart-qty" name="quantity"></td>
+                                    <td class=""><button class="btn btn-danger"><i
+                                                class="fa-regular fa-circle-xmark"></i></button></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>$ 1,250</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="text-end mt-3">
+                        <a href="#" class="btn btn-outline-warning">Cart</a>
+                        <a href="#" class="btn btn-outline-secondary">Checkout</a>
+                    </div>
+                    <div>
+                        Some text as placeholder. In real life you can have the elements you have
+                        chosen. Like, text, images, lists,
+                        etc.
+                    </div>
+                    <div class="dropdown mt-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Dropdown button
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item closecart" href="#footer" data-href="footer">Footer</a></li>
+                            <li><a class="dropdown-item closecart" href="#about" data-href="about">About</a></li>
+                            <li><a class="dropdown-item closecart" href="#map" data-href="map">Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--./header bottom-->
+        <div class="header-bottom sticky-top" id="heather-nav">
+
+            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" id="offcanvasNavbar" tabindex="-1"
+                        aria-labelledby="offcanvasNavbarLabel">
+
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Catalog</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+
+                                <li class="nav-item ps-3">
+                                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Payment</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Delivery</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+
+                                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false" data-bs-auto-close="outside">
+                                        Catalog
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-end">
+
+                                        <li>
+                                            <a href="category.html" class="dropdown-item">Shoes</a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html" class="dropdown-item">Jeans</a>
+                                        </li>
+
+                                        <li class="nav-item dropend">
+                                            <a href="category.html" class="dropdown-item dropdown-toggle"
+                                                data-bs-toggle="dropdown" data-bs-auto-close="outside">Sportwear</a>
+
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li>
+                                                    <a href="#" class="dropdown-item">Men's Sportwear</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="dropdown-item">Women's Sportwear</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="dropdown-item">Baby's Sportwear</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="category.html" class="dropdown-item">Coats</a></li>
+                                        <li><a href="category.html" class="dropdown-item">Shirts</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                        </div><!-- ./offcanvas body -->
+                    </div>
+                    <div>
+                        <a href="#" class="btn p-1 cart-open">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="badge text-bg-warning cart-badge bg-warning rounded-circle">3</span>
+                        </a>
+                        <button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                            aria-controls="offcanvasCart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="badge text-bg-warning cart-badge bg-warning  rounded-circle">5</span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div> <!--./header bottom-->
+
+        <main class="main">
+            <!-- breadcrumbs -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="breadcrumbs">
+                            <ul>
+                                <li>
+                                    <a href="home.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="category.html">Categories</a>
+                                </li>
+                                <li>
+                                    <span>Product Name</span>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid">
+                <div class="row mb-4">
+                    <div class="col-md-5 col-lg-4 col-mb-6 mb-3">
+                        <div class="bg-white h-100">
+                            <div id="carouselExampleFade" class="carousel slide carousel-dark carousel-fade">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./static/images/images_shoes/shoes01.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./static/images/images_shoes/shoes02.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./static/images/images_shoes/shoes03.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./static/images/images_shoes/shoes04.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./static/images/images_shoes/shoes05.jpg" class="d-block w-100"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-8 mb-3">
+
+                        <div class="bg-white product-content p-3 h-100">
+                            <h4 class="section-title h4"><span>Running Shoes</span></h4>
+                            <!-- !!!! add a brand -->
+                            <div class="row">
+                                <div class="col-md-12  d-flex justify-content-between text-center">
+                                    <div class="product-price">
+                                        <small>$100</small>
+                                        $50
+                                    </div>
+                                    <div class="product-add2cart mb-3 ju">
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" value="1" min="1">
+                                            <button class="btn btn-warning"><i class="fa fa-shopping-cart"></i>Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium laboriosam
+                                voluptate, deserunt maiores, adipisci reiciendis voluptatum, obcaecati placeat corrupti
+                                quidem impedit possimus dolorum quibusdam quas nesciunt fugit facere similique. Quia.
+                            </p>
+
+
+
+
+                            <div class="row">
+                                <div class="col-lg-4 mb-2">
+                                    <div class="card h-100 ">
+                                        <div class="card-body">
+                                            <h6 class="card-title"><i class="fa-solid fa-truck-fast"></i> SHIPPING &#38
+                                                RETURNS</h6>
+                                            <ul class="list-unstyled">
+                                                <br>
+                                                <li><strong>Free standard shipping on orders $50+ and free 60-day
+                                                        returns for Nike Members.</strong>
+                                                    <a href="#">Learn more. Return policy exclusions apply.</a>
+                                                </li>
+                                                <br>
+                                                <li>To get accurate shipping information <a href="#">Edit Location</a>
+                                                </li>
+                                                <br>
+                                                <li>Free Pickup <a href="#">Find a Store</a></li>
+                                                <br>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mb-2">
+                                    <div class="card h-100 ">
+                                        <div class="card-body">
+                                            <h6 class="card-title"><i class="fa-solid fa-earth-americas"></i>
+                                                SUSTAINABILITY</h6>
+                                            <ul class="list-unstyled">
+                                                <br>
+                                                <li><strong>56 %</strong> Recycled materials in the upper</li>
+                                                <br>
+                                                <li><strong>6.58</strong> Plastic bottles diverted from landfills</li>
+                                                <br>
+                                                <small>This product is carbon neutral.</small>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mb-2">
+                                    <div class="card h-100 ">
+                                        <div class="card-body">
+                                            <h6 class="card-title"><i class="fa-solid fa-hand-holding-heart"></i> BEST
+                                                FOR…</h6>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fa-regular fa-sun"></i> Comfort</li>
+                                                <br>
+                                                <li><i class="fa-solid fa-person-running"></i> Everyday runs</li>
+                                                <br>
+                                                <li><i class="fa-solid fa-road"></i> Road running</li>
+                                                <br>
+                                                <li><i class="fa-solid fa-person-walking"></i> Walking</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="product-content-detailes bg-white p-4">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                                    data-bs-target="#description-tab-pane" type="button" role="tab"
+                                    aria-controls="description-tab-pane" aria-selected="true">Description</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="features-tab" data-bs-toggle="tab"
+                                    data-bs-target="#features-tab-pane" type="button" role="tab"
+                                    aria-controls="features-tab-pane" aria-selected="false">Features</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="video-tab" data-bs-toggle="tab"
+                                    data-bs-target="#video-tab-pane" type="button" role="tab"
+                                    aria-controls="video-tab-pane" aria-selected="false">Video</button>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel"
+                                aria-labelledby="description-tab" tabindex="0">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, aliquam? Assumenda,
+                                    perspiciatis totam. Saepe iure excepturi incidunt voluptatem culpa adipisci velit
+                                    aut veritatis dolorum nisi quis neque consectetur, in nostrum.</p>
+                                <p>Ipsum eos hic tempora, consequatur porro doloribus alias consectetur aspernatur quasi
+                                    deserunt, nobis laboriosam a? Ipsam ullam incidunt sapiente delectus laudantium
+                                    blanditiis, maiores tempore aut iure corporis eaque doloremque dignissimos.</p>
+                                <p>Sunt, vel natus! Maxime cum ullam voluptate molestias quaerat nam aliquam porro
+                                    praesentium veritatis iure vel ex ratione repellendus laboriosam rerum delectus
+                                    voluptatibus, cupiditate quia eveniet aliquid error. Animi, odit!</p>
+                            </div>
+                            <div class="tab-pane fade" id="features-tab-pane" role="tabpanel"
+                                aria-labelledby="features-tab" tabindex="0">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Colors</th>
+                                            <td>Blue, White, Black</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sizes</th>
+                                            <td>5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="tab-pane fade" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab"
+                                tabindex="0">
+                                <div class="ratio ratio-16x9">
+
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zTf9LssaL1A"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                        <section class="new-products">
+                            <div class="container-fluid">
+                                <div class="row mb-3 ps-3">
+                                    <div class="col-12">
+                                        <h2 class="section-title">
+                                            <span>Recomended for you</span>
+                        
+                                        </h2>
+                                    </div><!-- end col-12 -->
+                                </div> <!-- end row -->
+                        
+                                <div class="owl-carousel owl-theme owl-carousel-full">
+                                    <div class="product-card">
+                                        <div class="product-card-offer">
+                                            <div class="offer-hit">Best</div>
+                                            <div class="offer-new">New</div>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="product.html"><img src="./static/images/images_shoes/shoes01.jpg" alt=""></a>
+                                        </div>
+                                        <div class="product-details">
+                                            <h4>
+                                                <a href="products.html">Product 1 Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing.</a>
+                                            </h4>
+                                            <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Culpa, numquam.</p>
+                                            <div class="product-bottom-details d-flex justify-content-between">
+                                                <div class="product-price">
+                                                    <small>$ 74.99</small> $48.99
+                                                </div>
+                                                <div class="product-links">
+                                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <div class="product-card-offer">
+                        
+                                            <div class="offer-new">New</div>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="product.html"><img src="./static/images/images_shoes/shoes02.jpg" alt=""></a>
+                                        </div>
+                                        <div class="product-details">
+                                            <h4>
+                                                <a href="products.html">Product 2 Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing.</a>
+                                            </h4>
+                                            <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Culpa, numquam.</p>
+                                            <div class="product-bottom-details d-flex justify-content-between">
+                                                <div class="product-price">
+                                                    <small>$ 74.99</small> $48.99
+                                                </div>
+                                                <div class="product-links">
+                                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <div class="product-card-offer">
+                        
+                                            <div class="offer-new">New</div>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="product.html"><img src="./static/images/images_shoes/shoes03.jpg" alt=""></a>
+                                        </div>
+                                        <div class="product-details">
+                                            <h4>
+                                                <a href="products.html">Product 2 Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing.</a>
+                                            </h4>
+                                            <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Culpa, numquam.</p>
+                                            <div class="product-bottom-details d-flex justify-content-between">
+                                                <div class="product-price">
+                                                    <small>$ 74.99</small> $48.99
+                                                </div>
+                                                <div class="product-links">
+                                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <div class="product-card-offer">
+                        
+                                            <div class="offer-new">New</div>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="product.html"><img src="./static/images/images_shoes/shoes04.jpg" alt=""></a>
+                                        </div>
+                                        <div class="product-details">
+                                            <h4>
+                                                <a href="products.html">Product 2 Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing.</a>
+                                            </h4>
+                                            <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Culpa, numquam.</p>
+                                            <div class="product-bottom-details d-flex justify-content-between">
+                                                <div class="product-price">
+                                                    <small>$ 74.99</small> $48.99
+                                                </div>
+                                                <div class="product-links">
+                                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <div class="product-card-offer">
+                        
+                                            <div class="offer-new">New</div>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="product.html"><img src="./static/images/images_shoes/shoes05.jpg" alt=""></a>
+                                        </div>
+                                        <div class="product-details">
+                                            <h4>
+                                                <a href="products.html">Product 2 Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing.</a>
+                                            </h4>
+                                            <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Culpa, numquam.</p>
+                                            <div class="product-bottom-details d-flex justify-content-between">
+                                                <div class="product-price">
+                                                    <small>$ 74.99</small> $48.99
+                                                </div>
+                                                <div class="product-links">
+                                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <div class="product-card-offer">
+                        
+                                            <div class="offer-new">New</div>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="product.html"><img src="./static/images/images_shoes/shoes06.jpg" alt=""></a>
+                                        </div>
+                                        <div class="product-details">
+                                            <h4>
+                                                <a href="products.html">Product 2 Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing.</a>
+                                            </h4>
+                                            <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Culpa, numquam.</p>
+                                            <div class="product-bottom-details d-flex justify-content-between">
+                                                <div class="product-price">
+                                                    <small>$ 74.99</small> $48.99
+                                                </div>
+                                                <div class="product-links">
+                                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <div class="product-card-offer">
+                        
+                                            <div class="offer-new">New</div>
+                                        </div>
+                                        <div class="product-thumb">
+                                            <a href="product.html"><img src="./static/images/images_shoes/shoes07.jpg" alt=""></a>
+                                        </div>
+                                        <div class="product-details">
+                                            <h4>
+                                                <a href="products.html">Product 2 Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing.</a>
+                                            </h4>
+                                            <p class="product-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Culpa, numquam.</p>
+                                            <div class="product-bottom-details d-flex justify-content-between">
+                                                <div class="product-price">
+                                                    <small>$ 74.99</small> $48.99
+                                                </div>
+                                                <div class="product-links">
+                                                    <a href="#" class="btn btn-outline-secondary add-to-cart">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+        </main>
+
+        <footer class="footer" id="footer">
+            <div class="container-fluid ">
+                <div class="row px-3">
+                    <div class="col-md-3 col-6 ">
+                        <h4>INFO</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="home.html">Payment</a></li>
+                            <li><a href="home.html">Delivery</a></li>
+                            <li><a href="home.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6 ">
+                        <h4>HOURS</h4>
+                        <ul class="list-unstyled">
+
+                            <li>Mon-Fri: 9AM - 6PM</li>
+                            <li>Sat: Closed</li>
+                            <li>Sun: Closed</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6 ">
+                        <h4>INFO</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+                            <li><a href="tel:+10987654321">+1 (098) 765-4321</a></li>
+                            <br>
+                            <li>600 N Michigan Ave, Chicago, IL</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <h4>FOLLOW US</h4>
+                        <ul class="list-unstyled footer-icons">
+                            <li><a href="facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <button id="top-button"><i class="fa-solid fa-angles-up"></i></button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="static//carusel/owl.carousel.js"></script>
+    <script src="static/carusel/owl.carousel.min.js"></script>
+
+
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>
